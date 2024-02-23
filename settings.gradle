@@ -1,0 +1,3 @@
+rootProject.name = 'my-quiz-app'
+include 'quiz-service'
+
