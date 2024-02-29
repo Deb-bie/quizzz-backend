@@ -29,7 +29,7 @@ public class Question {
     @Column(nullable = false)
     private QuestionType questionType;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     private int time_limit;
 
     @Column(nullable = false)
