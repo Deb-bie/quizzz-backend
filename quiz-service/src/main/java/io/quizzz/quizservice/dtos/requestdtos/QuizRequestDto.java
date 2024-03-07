@@ -12,7 +12,7 @@ import java.time.LocalTime;
 @Setter
 @Getter
 @RequiredArgsConstructor
-public class CreateQuizRequestDto {
+public class QuizRequestDto {
     private String quiz_name;
     private int number_of_questions;
     private Category category;
