@@ -18,7 +18,7 @@ import java.util.UUID;
 @NoArgsConstructor
 public class Answer {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID answer_id;
 
     @Column(nullable = false)
@@ -27,7 +27,7 @@ public class Answer {
     @Column(nullable = false)
     private boolean is_correct_answer;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "question_id")
     private Question question;
 
